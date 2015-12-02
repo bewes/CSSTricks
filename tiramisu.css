@@ -1,0 +1,54 @@
+body {
+	background-color: #D8DCE0;
+	color: #606060;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, p, ul li {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+ol, ul {
+	padding-left: 0rem;
+}
+
+th {
+	padding: 1rem;
+}
+
+ol li {
+	counter-increment: item;
+	position: relative;
+}
+
+ol li p:after {
+	content: counter(item);
+	position: absolute;
+	color:#773838;
+	left: 1rem;
+	font-size: 10rem;
+}
+
+ol li p, ol li img {
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 40rem) {
+	
+	body {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	
+} /* END MEDIA QUERY */
